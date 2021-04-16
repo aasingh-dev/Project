@@ -1,0 +1,30 @@
+<project>
+	<groupId>com.aashish</groupId>
+	<artifactId>HelloWorld</artifactId>
+	<version>1.1-SNAPSHOT</version>
+	<modelVersion>4.0.0</modelVersion>
+	<packaging>jar</packaging>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target> 1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+<distributionManagement>
+    <snapshotRepository>
+      <id>snapshots</id>
+        <name>snapshots</name>
+        <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
+
+</project>
